@@ -59,4 +59,52 @@ public class First_method implements Interface {
 		return score;
 	}
 	
+	public double four(double score) {
+		
+		int ra = random();
+		if (ra >= 0 && ra < 4) {
+			System.out.println("성공");
+			System.out.println();
+			score = score * 2;
+		} else {
+			System.out.println("실패");
+			System.out.println();
+			score = score / 2;
+		}
+		
+		return score;
+	}
+	
+	public double five(double score) {
+		
+		int ra = random();
+		if (ra >= 0 && ra < 2) {
+			System.out.println("성공");
+			System.out.println();
+			score = score * 3;
+		} else {
+			System.out.println("실패");
+			System.out.println();
+			score = score / 3;
+		}
+		
+		return score;
+	}
+	
+	public double six(double score) {
+		
+		int ra = random();
+		if (ra >= 0 && ra < 1) {
+			System.out.println("성공");
+			System.out.println();
+			score = score * 4;
+		} else {
+			System.out.println("실패");
+			System.out.println();
+			score = score / 4;
+		}
+		
+		return score;
+	}
+	
 }

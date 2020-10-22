@@ -19,9 +19,9 @@ public class First {
 		System.out.println("1 - 80% 확률로 + 100점 / 20% 확률로 - 110점");
 		System.out.println("2 - 50% 확률로 + 200점 / 50% 확률로 - 220점");
 		System.out.println("3 - 30% 확률로 + 500점 / 70% 확룰로 - 550점");
-		System.out.println("4 - 60% 확률로 점수 2배 / 40% 확률로 점수 1/2배");
-		System.out.println("5 - 40% 확률로 점수 3배 / 60% 확률로 점수 1/3배");
-		System.out.println("6 - 20% 확률로 점수 4배 / 80% 확률로 점수 1/4배");
+		System.out.println("4 - 40% 확률로 점수 2배 / 60% 확률로 점수 1/2배");
+		System.out.println("5 - 20% 확률로 점수 3배 / 80% 확률로 점수 1/3배");
+		System.out.println("6 - 10% 확률로 점수 4배 / 90% 확률로 점수 1/4배");
 		System.out.println();
 		
 		while (end == false) {
@@ -39,11 +39,11 @@ public class First {
 		} else if (ch == 3) {
 			score = fm.three(score);
 		} else if (ch == 4) {
-			
+			score = fm.four(score);
 		} else if (ch == 5) {
-			
+			score = fm.five(score);
 		} else if (ch == 6) {
-			
+			score = fm.six(score);
 		} else {
 			System.out.println("1 ~ 6 까지의 숫자를 입력해주세요.");
 			System.out.println();
