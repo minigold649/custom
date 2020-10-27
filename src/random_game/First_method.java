@@ -5,7 +5,6 @@ import java.util.Random;
 public class First_method implements Interface {
 	
 	public int random() {
-	
 		Random r = new Random();
 		int result = r.nextInt(10);
 		return result;
