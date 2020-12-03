@@ -32,23 +32,8 @@ public class First {
 		ch = s.nextInt();
 		System.out.println();
 		
-		if (ch == 1) {
-			score = fm.one(score);
-			tr = tr + 1;
-		} else if (ch == 2) {
-			score = fm.two(score);
-			tr = tr + 1;
-		} else if (ch == 3) {
-			score = fm.three(score);
-			tr = tr + 1;
-		} else if (ch == 4) {
-			score = fm.four(score);
-			tr = tr + 1;
-		} else if (ch == 5) {
-			score = fm.five(score);
-			tr = tr + 1;
-		} else if (ch == 6) {
-			score = fm.six(score);
+		if (ch >= 1 && ch <= 6) {
+			score = fm.point(score, ch);
 			tr = tr + 1;
 		} else {
 			System.out.println("1 ~ 6 까지의 숫자를 입력해주세요.");
